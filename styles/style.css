@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&family=Roboto&display=swap");
+
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --1: #1c4e4a;
+  --2: #28746f;
+  --3: #349b93;
+  --4: #42c1b7;
+  --5: #67cec7;
+  --6: #f3f3f3;
+  --7: #0a0a0a;
+  --8: #f4fbff;
+  --9: #ff2f2f;
+  --10: #37a49b;
+}
+
+.container {
+  width: 1055px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--8);
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section:first-child {
+  padding-top: 35px;
+}
+
+section:nth-child(even) {
+  background-color: var(--10);
+}
+
+p {
+  color: var(--7);
+}
+
+p.small {
+  font-size: 0.875rem;
+}
+
+.white p,
+p.white,
+.white {
+  color: var(--6);
+}
+
+h1.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+img {
+  z-index: 0;
+}
