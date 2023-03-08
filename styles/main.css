@@ -1,0 +1,143 @@
+/* About-us */
+
+#about-us-section .container {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr 2px;
+  gap: 35px;
+}
+#about-us-section .container::after {
+  content: "";
+  display: flex;
+  width: 3px;
+  background-color: var(--2);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#about-us-section .img {
+  overflow: hidden;
+}
+
+#about-us-section .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* About-us */
+/*  */
+/* Teachers */
+
+#teacher-section .teachers {
+  display: flex;
+  justify-content: space-between;
+}
+
+#teacher-section .teacher-content {
+  position: relative;
+  cursor: pointer;
+}
+
+#teacher-section .teacher-content p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--6);
+  border: 3px solid var(--2);
+  box-sizing: border-box;
+  padding: 6px 0;
+  text-align: center;
+}
+
+#teacher-section .content-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+}
+
+#teacher-section .content-text:before,
+#teacher-section .content-text:after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2px;
+  background-color: var(--8);
+  margin: auto 0;
+}
+
+#teacher-section .content-text p {
+  text-align: center;
+}
+
+/* Teachers */
+/*  */
+/* Classes */
+
+#group-section .groups {
+  display: flex;
+  justify-content: space-between;
+}
+
+#group-section .group-content {
+  background-color: var(--3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#group-section .group-content p {
+  color: var(--8);
+  font-weight: 400;
+  padding: 15px 8px;
+  text-align: center;
+}
+
+#group-section .group-content p:first-of-type {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#group-section .group-content p + p {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+}
+
+#group-section .group-content h3 {
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--8);
+}
+
+#group-section .group-content button {
+  margin: 20px auto;
+}
+
+/* Classes */
+/*  */
+/* Assessment */
+
+#assessment-section .content-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+}
+
+#assessment-section .content-text p {
+  text-align: center;
+}
+
+#assessment-section .content-text button {
+  background-color: #00000000;
+  border: none;
+  width: min-content;
+  cursor: pointer;
+}
+
+#assessment-section .content-text button:first-of-type {
+  margin-left: auto;
+}
+#assessment-section .content-text button:last-of-type img {
+  transform: scaleX(-1);
+}
