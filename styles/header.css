@@ -15,6 +15,7 @@
   font-family: "Open Sans", sans-serif;
   letter-spacing: 1px;
   font-weight: 500;
+  margin: 0;
 }
 
 /* TopBar */
@@ -55,20 +56,6 @@ header nav .container a {
 /* Banner Img */
 /*  */
 /* Banner text */
-
-/* .table.container {
-  border: 2px solid var(--2);
-  color: var(--2);
-  font-family: "Dancing Script", cursive;
-  width: min-content;
-  white-space: nowrap;
-  padding: 18px 36px;
-  text-align: center;
-  margin-top: -5%;
-  z-index: 1;
-  position: relative;
-  background-color: var(--6);
-} */
 
 .table.container {
   border: 2px solid var(--2);
