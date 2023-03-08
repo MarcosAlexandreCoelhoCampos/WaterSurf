@@ -50,11 +50,31 @@ section:first-child {
 }
 
 section:nth-child(even) {
-  background-color: var(--10);
+  background-color: var(--3);
+}
+
+section:nth-child(even) h2 {
+  color: var(--8);
+}
+
+section:nth-child(even) h2:after {
+  background-color: var(--8);
+}
+
+section.waves {
+  background-image: url(../imgs/waves.svg);
 }
 
 p {
   color: var(--7);
+  font-size: 0.95rem;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+}
+
+p + p {
+  margin-top: 15px;
 }
 
 p.small {
@@ -67,12 +87,82 @@ p.white,
   color: var(--6);
 }
 
+p.white {
+  letter-spacing: 1px;
+}
+
 h1.logo {
   font-family: "Dancing Script", cursive;
   font-size: 2.6rem;
   font-weight: 700;
 }
 
-img {
+img:not(img.icon) {
   z-index: 0;
+  border: 3px solid var(--2);
+  box-sizing: border-box;
+}
+
+.title-h2,
+.title-h3 {
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto 25px auto;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  color: var(--3);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 2px;
+  background-color: var(--2);
+  margin: 5px -25% 0 -25%;
+}
+
+.title-h3 h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  margin-top: 40px;
+}
+.title-h3 h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--8);
+  margin: 5px auto 0 auto;
+}
+
+.call-button {
+  margin: 35px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min-content;
+  white-space: nowrap;
+}
+
+.call-button p {
+  margin-top: 10px;
+}
+
+.call-button button,
+button.button {
+  background-color: var(--9);
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: var(--8);
+  padding: 6px 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+  cursor: pointer;
 }
