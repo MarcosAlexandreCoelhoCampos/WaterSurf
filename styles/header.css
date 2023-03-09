@@ -9,6 +9,7 @@
   justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 5px;
+  gap: 5px;
 }
 
 .topbar p {
@@ -16,6 +17,19 @@
   letter-spacing: 1px;
   font-weight: 500;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .topbar .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .topbar p {
+    text-align: center;
+  }
 }
 
 /* TopBar */
@@ -76,4 +90,71 @@ header nav .container a {
   position: relative;
 }
 
+@media (max-width: 650px) {
+  .table.container {
+    width: 80vw;
+    white-space: normal;
+    word-wrap: break-word;
+    height: auto;
+    padding: 10px 36px;
+    margin-top: -60px;
+    z-index: 1;
+    position: relative;
+  }
+}
+@media (max-width: 450px) {
+  .table.container {
+    margin-top: -70px;
+  }
+}
+
 /* Banner text */
+/*  */
+/* Menu Mobile */
+
+header nav .container .menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  header nav .container .menu-button {
+    display: flex;
+  }
+
+  header nav .container ul {
+    display: none;
+  }
+  header nav .container ul.active {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  header nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav .container div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header nav .container ul li {
+    width: 100%;
+    padding: 2px;
+  }
+  header nav .container ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    min-width: 100%;
+    max-width: 100%;
+    border-top: 1px solid #ffffff50;
+    border-bottom: 1px solid #ffffff50;
+  }
+}
