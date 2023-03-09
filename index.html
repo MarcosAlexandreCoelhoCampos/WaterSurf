@@ -20,8 +20,12 @@
     </div>
     <nav>
       <div class="container white">
-        <h1 class="logo">WaterSurf</h1>
-        <ul>
+        <div>
+          <h1 class="logo">WaterSurf</h1>
+          <img src="./imgs/menu-button.svg" alt="Botão para abrir e fechar o menu." class="menu-button"
+            data-menu-button>
+        </div>
+        <ul data-menu-ul>
           <li><a href="#about-us-section" class="white"> SOBRE </a></li>
           <li><a href="#teacher-section" class="white"> PROFESSORES </a></li>
           <li><a href="#group-section" class="white"> MATRICULE-SE </a></li>
@@ -152,20 +156,20 @@
         </div>
         <div class="assessment">
           <div class="title-h3 white">
-            <h3> Matheus Mathias </h3>
+            <h3 data-assessment-name> Matheus Mathias </h3>
           </div>
           <div class="content-text">
-            <button>
+            <button data-assessment-button-previous>
               <img src="./imgs/button.svg" alt="Botão para trocar de comentário." class="icon">
             </button>
-            <p class="white">
+            <p class="white" data-assessment-text>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
               lectus
               magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel
               fringilla
               est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui
             </p>
-            <button>
+            <button data-assessment-button-next>
               <img src="./imgs/button.svg" alt="Botão para trocar de comentário." class="icon">
             </button>
           </div>
@@ -184,25 +188,25 @@
     <div class="container">
       <div class="modal">
         <div class="title-h2">
-          <h2> Nos envie sua mensagem </h2>
+          <h2> Nos envie seu email </h2>
         </div>
         <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name">
 
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
+          <input type="email" id="email" name="email">
 
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject"><br>
+          <label for="subject">Titulo:</label>
+          <input type="text" id="subject" name="subject">
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea><br>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="3"></textarea>
           <div class="call-button">
-            <input type="submit" value="Send">
+            <input type="submit" value="Enviar">
           </div>
         </form>
-        <button class="close-button">X</button>
+        <button class="close-button" modal-close-button>X</button>
       </div>
     </div>
   </dialog>
