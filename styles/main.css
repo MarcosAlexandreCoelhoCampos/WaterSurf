@@ -24,6 +24,29 @@
   object-fit: cover;
 }
 
+@media (max-width: 700px) {
+  #about-us-section .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+  #about-us-section .container::after {
+    display: none;
+  }
+  #about-us-section .img img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 400px) {
+  #about-us-section .img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 /* About-us */
 /*  */
 /* Teachers */
@@ -31,6 +54,7 @@
 #teacher-section .teachers {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 #teacher-section .teacher-content {
@@ -69,6 +93,53 @@
   text-align: center;
 }
 
+@media (max-width: 890px) {
+  #teacher-section .teacher-content {
+    height: 280px;
+    overflow: hidden;
+  }
+  #teacher-section .teacher-content img {
+    width: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 800px) {
+  #teacher-section .teacher-content {
+    height: 200px;
+    overflow: hidden;
+  }
+  #teacher-section .teacher-content img {
+    width: 140px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 600px) {
+  #teacher-section .content-text {
+    display: flex;
+  }
+  #teacher-section .content-text:before,
+  #teacher-section .content-text:after {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  #teacher-section .teachers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+  #teacher-section .teacher-content {
+    height: 100%;
+    overflow: visible;
+  }
+  #teacher-section .teacher-content img {
+    width: 100%;
+  }
+}
+
 /* Teachers */
 /*  */
 /* Classes */
@@ -76,11 +147,12 @@
 #group-section .groups {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 
 #group-section .group-content {
   background-color: var(--3);
-  border-radius: 10px;
+  border-radius: var(--border-radius-value);
   display: flex;
   flex-direction: column;
 }
@@ -114,6 +186,31 @@
   margin: 20px auto;
 }
 
+#group-section .group-content button:active {
+  border: 2px solid var(--1);
+}
+
+@media (max-width: 790px) {
+  #group-section .groups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  #group-section .groups {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #group-section .group-content {
+    width: 250px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 /* Classes */
 /*  */
 /* Assessment */
@@ -140,4 +237,20 @@
 }
 #assessment-section .content-text button:last-of-type img {
   transform: scaleX(-1);
+}
+
+@media (max-width: 600px) {
+  #assessment-section .content-text {
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    gap: 30px;
+  }
+
+  #assessment-section .content-text button img {
+    width: 8vw;
+  }
+
+  #assessment-section .content-text button {
+    height: 100%;
+  }
 }

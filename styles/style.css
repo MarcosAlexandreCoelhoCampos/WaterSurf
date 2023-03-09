@@ -24,6 +24,7 @@ font-family: 'Roboto', sans-serif;
   --8: #f4fbff;
   --9: #ff2f2f;
   --10: #37a49b;
+  --border-radius-value: 8px;
 }
 
 .container {
@@ -97,6 +98,12 @@ h1.logo {
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
 img:not(img.icon):not(img.banner) {
   z-index: 0;
   border: 3px solid var(--2);
@@ -126,6 +133,13 @@ h2::after {
   margin: 5px -25% 0 -25%;
 }
 
+@media (max-width: 550px) {
+  h2::after {
+    width: 100%;
+    margin: 5px auto 0 auto;
+  }
+}
+
 .title-h3 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -150,6 +164,22 @@ h2::after {
   white-space: nowrap;
 }
 
+@media (max-width: 400px) {
+  .call-button {
+    margin: 35px auto 0 auto;
+    align-items: center;
+    width: 80vw;
+    max-width: 100%;
+    white-space: wrap;
+  }
+  .call-button p {
+    white-space: pre-wrap;
+    margin-top: 10px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 .call-button p {
   margin-top: 10px;
 }
@@ -163,7 +193,7 @@ button.button,
   font-size: 1rem;
   color: var(--8);
   padding: 6px 30px;
-  border-radius: 10px;
+  border-radius: var(--border-radius-value);
   margin: 0 auto;
   cursor: pointer;
 }
@@ -184,23 +214,6 @@ button.button,
 
 /* Scrolbar */
 
-.close-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: var(--9);
-  width: 35px;
-  height: 35px;
-  margin: 3px;
-  box-sizing: content-box;
-  color: var(--8);
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  cursor: pointer;
-  border: 2px solid var(--7);
-}
-
-.close-button:active {
-  border: 3px solid var(--7);
-  margin: 2px;
+textarea {
+  resize: none;
 }
