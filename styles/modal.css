@@ -1,0 +1,96 @@
+#modal-sign-up {
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 2;
+  border: none;
+  background-color: #00000090;
+}
+
+#modal-sign-up.active {
+  display: flex;
+}
+
+#modal-sign-up .modal {
+  background-color: var(--8);
+  border: 3px solid var(--1);
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 3px var(--7);
+}
+
+@media (max-width: 400px) {
+  #modal-sign-up .modal {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+#modal-sign-up .modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-sign-up .modal form .call-button {
+  margin: 0;
+}
+#modal-sign-up .modal form .call-button input[type="submit"] {
+  width: max-content;
+  padding: 5px 15px;
+  border: 2px solid var(--1);
+  font-size: 1rem;
+}
+#modal-sign-up .modal form .call-button input[type="submit"]:active {
+  border: 3px solid var(--1);
+}
+
+#modal-sign-up .modal form label {
+  font-family: "Roboto", sans-serif;
+  color: var(--3);
+  margin-bottom: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#modal-sign-up .modal form input,
+#modal-sign-up .modal form textarea {
+  width: 60%;
+  max-width: 300px;
+  padding: 5px 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--9);
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  box-sizing: content-box;
+  color: var(--8);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid var(--7);
+  border-radius: var(--border-radius-value);
+}
+
+.close-button:active {
+  border: 3px solid var(--7);
+  margin: 2px;
+}
