@@ -75,7 +75,7 @@ header nav .container a {
 .table.container {
   border: 2px solid var(--2);
   color: var(--2);
-  background-color: var(--6);
+  background-color: var(--8);
   font-family: "Dancing Script", cursive;
   width: min-content;
   white-space: nowrap;

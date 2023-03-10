@@ -6,19 +6,19 @@ export function clickTeachers() {
   const teachersInfo = [
     {
       name: "Gabriel Silva",
-      text: `Irure Lorem dolore excepteur et sint fugiat ad anim eiusmod aliquip mollit ea. Laboris non ut nostrud nisi culpa. Commodo esse aliquip aliqua sint quis quis nisi exercitation nostrud nostrud. Qui minim non consequat qui irure consequat qui et sunt ullamco minim proident nulla laboris. Aliquip voluptate deserunt commodo voluptate eiusmod reprehenderit dolor aute velit elit.`,
+      text: `Surfista experiente que começou a surfar quando criança. Ele cresceu em uma família de surfistas e aprendeu as técnicas básicas do esporte desde cedo. Com o tempo, Gabriel se tornou um surfista competitivo, participando de campeonatos locais e regionais. Ele também tem vasta experiência em ensinar surf para alunos de diferentes níveis de habilidade, adaptando seu método de ensino para as necessidades individuais de cada aluno.`,
     },
     {
       name: "Andressa Coelho",
-      text: `Ut est commodo laborum duis elit. Consequat enim velit deserunt adipisicing enim. Voluptate id ipsum duis commodo culpa minim excepteur amet dolor amet aute laborum. Cupidatat mollit minim occaecat ipsum Lorem. Dolor culpa amet voluptate occaecat occaecat in enim nisi pariatur nostrud culpa consectetur. Sit labore amet incididunt voluptate esse ut eu esse voluptate aute Lorem`,
+      text: `Descobriu o surf na adolescência e desde então se apaixonou pelo esporte. Ela passou anos aprimorando suas habilidades e conhecimentos em diferentes praias ao redor do mundo. Andressa é uma professora experiente, que possui habilidades em ensinar técnicas avançadas de surf para alunos de todos os níveis de habilidade. Ela está comprometida em garantir que seus alunos tenham uma experiência segura e divertida na água.`,
     },
     {
       name: "Matheus Santos",
-      text: `Proident tempor aliquip qui sint. Adipisicing tempor nisi Lorem sint ut id. Id culpa laborum ullamco nostrud est tempor duis non. Dolore irure nisi esse officia nulla incididunt irure duis adipisicing. Consectetur reprehenderit cillum aute in aliqua eiusmod reprehenderit consectetur labore proident Lorem. Proident id incididunt enim ex laborum aute dolore fugiat fugiat culpa pariatur mollit exercitation. In et aliquip enim Lorem aute laboris ex. Non aliqua anim eiusmod cupidatat esse laboris aliqua.`,
+      text: `Surfista experiente que viajou para vários países em busca das melhores ondas. Ele tem uma ampla experiência em surf e sabe como ensinar técnicas avançadas para alunos de todos os níveis de habilidade. Matheus é um professor apaixonado e dedicado, que está comprometido em ajudar seus alunos a alcançarem seus objetivos e se tornarem surfistas experientes.`,
     },
     {
       name: "Jorge Almeida",
-      text: `Sint officia deserunt pariatur non adipisicing est veniam ex elit magna. Laborum aliquip consectetur ex dolore aute duis fugiat eu tempor. Consequat dolor ipsum magna enim nulla sint.`,
+      text: `Surfista e professor experiente que ama compartilhar seu conhecimento com seus alunos. Ele cresceu surfando em praias locais e desenvolveu habilidades excepcionais em surfar ondas grandes. Jorge tem vasta experiência em ensinar técnicas de surf para alunos de diferentes níveis de habilidade, adaptando seu método de ensino às necessidades individuais de cada aluno. Ele é apaixonado pelo esporte e está comprometido em ajudar seus alunos a se tornarem surfistas confiantes e seguros.`,
     },
   ];
 

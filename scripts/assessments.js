@@ -11,24 +11,26 @@ export function assessments() {
   const assessments = [
     {
       name: "Gustavo Coelho",
-      text: `Irure Lorem dolore excepteur et sint fugiat ad anim eiusmod aliquip mollit ea. Laboris non ut nostrud nisi culpa. Commodo esse aliquip aliqua sint quis quis nisi exercitation nostrud nostrud. Qui minim non consequat qui irure consequat qui et sunt ullamco minim proident nulla laboris. Aliquip voluptate deserunt commodo voluptate eiusmod reprehenderit dolor aute velit elit.`,
+      text: `Eu sempre tive medo de entrar no mar, mas a equipe da WaterSurf me ajudou a superar esse medo. O professor Matheus Santos foi incrível em me ensinar as técnicas básicas de surf e me fazer sentir seguro na água. A escola é muito profissional e todos os professores são altamente capacitados. Obrigado WaterSurf por me ajudar a realizar meu sonho de surfar!`,
     },
     {
       name: "Andreia Campos ",
-      text: `Ut est commodo laborum duis elit. Consequat enim velit deserunt adipisicing enim. Voluptate id ipsum duis commodo culpa minim excepteur amet dolor amet aute laborum. Cupidatat mollit minim occaecat ipsum Lorem. Dolor culpa amet voluptate occaecat occaecat in enim nisi pariatur nostrud culpa consectetur. Sit labore amet incididunt voluptate esse ut eu esse voluptate aute Lorem`,
+      text: `Eu nunca pensei que pudesse aprender a surfar aos 40 anos de idade, mas a WaterSurf tornou isso possível. O professor Gabriel Silva é incrível em ensinar técnicas de surf para adultos iniciantes como eu. Ele foi muito paciente e dedicado em me ensinar os fundamentos básicos e me ajudou a evoluir rapidamente. Estou muito grata à equipe da WaterSurf por me proporcionar uma experiência de aprendizado incrível.`,
     },
     {
       name: "Tiago Oir",
-      text: `Proident tempor aliquip qui sint. Adipisicing tempor nisi Lorem sint ut id. Id culpa laborum ullamco nostrud est tempor duis non. Dolore irure nisi esse officia nulla incididunt irure duis adipisicing. Consectetur reprehenderit cillum aute in aliqua eiusmod reprehenderit consectetur labore proident Lorem. Proident id incididunt enim ex laborum aute dolore fugiat fugiat culpa pariatur mollit exercitation. In et aliquip enim Lorem aute laboris ex. Non aliqua anim eiusmod cupidatat esse laboris aliqua.`,
+      text: `A WaterSurf é a melhor escola de surf que já vi. A equipe é muito profissional e os professores são altamente capacitados. Eu nunca imaginei que pudesse surfar ondas grandes, mas o professor Jorge Almeida me ajudou a alcançar esse objetivo. Ele é um professor incrível que é apaixonado pelo esporte e está comprometido em ajudar seus alunos a alcançarem seus objetivos. Obrigado WaterSurf por me ajudar a me tornar um surfista mais confiante e experiente.`,
     },
     {
       name: "Rafael Silva",
-      text: `Sint officia deserunt pariatur non adipisicing est veniam ex elit magna. Laborum aliquip consectetur ex dolore aute duis fugiat eu tempor. Consequat dolor ipsum magna enim nulla sint.`,
+      text: `Eu levei meu filho de 10 anos para a WaterSurf e fiquei muito impressionado com a qualidade do serviço. A escola é muito segura e profissional, e o professor Andressa Coelho foi incrível em ensinar meu filho as técnicas básicas de surf. Ela foi muito paciente e dedicada, e meu filho adorou a experiência. Eu recomendo a WaterSurf para qualquer pessoa que queira aprender a surfar com segurança e diversão.`,
     },
   ];
 
   buttonPrevious.addEventListener("click", previousAssessment);
   buttonNext.addEventListener("click", nextAssessment);
+
+  nextAssessment();
 
   function previousAssessment() {
     x - 1 >= 0 ? x-- : (x = assessments.length - 1);

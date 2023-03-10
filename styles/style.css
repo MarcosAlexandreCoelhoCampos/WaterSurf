@@ -186,7 +186,8 @@ h2::after {
 
 .call-button button,
 button.button,
-.call-button > input {
+.call-button > input,
+.call-button a {
   background-color: var(--9);
   border: 0;
   font-family: "Roboto", sans-serif;
