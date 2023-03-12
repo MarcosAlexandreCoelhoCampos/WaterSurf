@@ -39,11 +39,12 @@ font-family: 'Roboto', sans-serif;
 
 body {
   background-color: var(--8);
+  scroll-behavior: smooth;
 }
 
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 section:first-child {
