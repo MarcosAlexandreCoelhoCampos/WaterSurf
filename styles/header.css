@@ -133,7 +133,6 @@ header nav .container .menu-button {
     height: 0;
     width: 100%;
     text-align: center;
-    margin-top: 0;
     gap: 0;
     background-color: var(--2);
     z-index: 3;
@@ -141,10 +140,13 @@ header nav .container .menu-button {
     flex-direction: column;
     overflow: hidden;
     position: absolute;
-    top: 60px;
-    transition: 0.5s linear height;
+    top: 56px;
+    padding-top: 0;
+    transition: 0.5s linear height, 0s linear 0.5s padding-top;
   }
   header nav .container ul.active {
+    transition: 0.5s linear height, 0s linear 0s padding-top;
+    padding-top: 4px;
     height: 240px;
   }
   header nav .container {
