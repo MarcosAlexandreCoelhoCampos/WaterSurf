@@ -140,11 +140,12 @@ header nav .container .menu-button {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: absolute;
+    top: 60px;
     transition: 0.5s linear height;
   }
   header nav .container ul.active {
     height: 240px;
-    margin-top: 10px;
   }
   header nav .container {
     display: flex;
