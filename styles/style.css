@@ -6,6 +6,9 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
 
+/*  */
+/* General */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -17,15 +20,35 @@ font-family: 'Roboto', sans-serif;
   --1: #1c4e4a;
   --2: #28746f;
   --3: #349b93;
-  --4: #42c1b7;
   --5: #67cec7;
   --6: #f3f3f3;
   --7: #0a0a0a;
   --8: #f4fbff;
   --9: #ff2f2f;
-  --10: #37a49b;
   --border-radius-value: 8px;
 }
+
+body {
+  background-color: var(--8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General */
+/*  */
+/* Imgs */
+
+img:not(img.icon):not(img.banner) {
+  z-index: 0;
+  border: 3px solid var(--2);
+  box-sizing: border-box;
+}
+
+/* Imgs */
+/*  */
+/* Container */
 
 .container {
   width: 1055px;
@@ -37,10 +60,9 @@ font-family: 'Roboto', sans-serif;
   margin-right: auto;
 }
 
-body {
-  background-color: var(--8);
-  scroll-behavior: smooth;
-}
+/* Container */
+/*  */
+/* Section */
 
 section {
   padding-top: 80px;
@@ -66,6 +88,10 @@ section:nth-child(even) h2:after {
 section.waves {
   background-image: url(../imgs/waves.svg);
 }
+
+/* Section */
+/*  */
+/* Paragraph */
 
 p {
   color: var(--7);
@@ -93,6 +119,21 @@ p.white {
   letter-spacing: 1px;
 }
 
+/* Paragraph */
+/*  */
+/* Titles */
+
+.title-h2,
+.title-h3 {
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto 25px auto;
+}
+
+/* Titles */
+/*  */
+/* Titles H1 */
+
 h1.logo {
   font-family: "Dancing Script", cursive;
   font-size: 2.6rem;
@@ -105,22 +146,13 @@ h1.logo {
   }
 }
 
-img:not(img.icon):not(img.banner) {
-  z-index: 0;
-  border: 3px solid var(--2);
-  box-sizing: border-box;
-}
-
-.title-h2,
-.title-h3 {
-  width: min-content;
-  white-space: nowrap;
-  margin: 0 auto 25px auto;
-}
+/* Titles H1 */
+/*  */
+/* Titles H2  */
 
 h2 {
   font-family: "Dancing Script", cursive;
-  color: var(--3);
+  color: var(--2);
   font-size: 2rem;
   font-weight: 400;
 }
@@ -141,6 +173,10 @@ h2::after {
   }
 }
 
+/* Titles H2  */
+/*  */
+/* Titles H3 */
+
 .title-h3 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -155,6 +191,10 @@ h2::after {
   background-color: var(--8);
   margin: 5px auto 0 auto;
 }
+
+/* Titles H3 */
+/*  */
+/* Call-Button */
 
 .call-button {
   margin: 35px auto 0 auto;
@@ -200,6 +240,16 @@ button.button,
   cursor: pointer;
 }
 
+/* Call-Button */
+/*  */
+/* TextArea */
+
+textarea {
+  resize: none;
+}
+
+/* TextArea */
+/*  */
 /* Scrolbar */
 
 ::-webkit-scrollbar {
@@ -207,7 +257,7 @@ button.button,
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--8s);
+  background: var(--6);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -215,7 +265,3 @@ button.button,
 }
 
 /* Scrolbar */
-
-textarea {
-  resize: none;
-}
