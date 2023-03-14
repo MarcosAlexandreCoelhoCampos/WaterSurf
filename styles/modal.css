@@ -9,7 +9,7 @@
   height: 100vh;
   max-width: 100%;
   max-height: 100%;
-  z-index: 2;
+  z-index: 4;
   border: none;
   background-color: #00000090;
 }

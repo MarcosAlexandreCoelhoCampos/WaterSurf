@@ -29,19 +29,21 @@ export function clickTeachers() {
   const teacher = (e) =>
     e.target.parentNode.getAttribute("data-teacher-content");
 
-  activeTeacherInfo("Jorge Almeida");
+  const findTeacher = (name) =>
+    teachersInfo.find((teacher) => teacher.name === name);
+
+  const teacherTexts = (teacher) => {
+    teacherName.innerText = findTeacher(teacher).name;
+    teacherText.innerText = findTeacher(teacher).text;
+  };
 
   function activeTeacherInfo(e) {
     if (typeof e === "string") {
-      teacherName.innerText = findTeacher(e).name;
-      teacherText.innerText = findTeacher(e).text;
+      teacherTexts(e);
     } else {
-      teacherName.innerText = findTeacher(teacher(e)).name;
-      teacherText.innerText = findTeacher(teacher(e)).text;
+      teacherTexts(teacher(e));
     }
   }
 
-  function findTeacher(name) {
-    return teachersInfo.find((teacher) => teacher.name === name);
-  }
+  activeTeacherInfo("Jorge Almeida");
 }

@@ -1,13 +1,4 @@
 export function assessments() {
-  const buttonPrevious = document.querySelector(
-    "[data-assessment-button-previous]"
-  );
-  const buttonNext = document.querySelector("[data-assessment-button-next]");
-  const text = document.querySelector("[data-assessment-text]");
-  const name = document.querySelector("[data-assessment-name]");
-
-  let x = 0;
-
   const assessments = [
     {
       name: "Gustavo Coelho",
@@ -27,19 +18,32 @@ export function assessments() {
     },
   ];
 
+  const buttonPrevious = document.querySelector(
+    "[data-assessment-button-previous]"
+  );
+  const buttonNext = document.querySelector("[data-assessment-button-next]");
+  const text = document.querySelector("[data-assessment-text]");
+  const name = document.querySelector("[data-assessment-name]");
+
+  let x = 0;
+
   buttonPrevious.addEventListener("click", previousAssessment);
   buttonNext.addEventListener("click", nextAssessment);
 
-  nextAssessment();
-
   function previousAssessment() {
     x - 1 >= 0 ? x-- : (x = assessments.length - 1);
-    text.innerHTML = assessments[x].text;
-    name.innerHTML = assessments[x].name;
+    changeTextAssessment();
   }
+
   function nextAssessment() {
     x + 1 != assessments.length ? x++ : (x = 0);
+    changeTextAssessment();
+  }
+
+  function changeTextAssessment() {
     text.innerHTML = assessments[x].text;
     name.innerHTML = assessments[x].name;
   }
+
+  nextAssessment();
 }

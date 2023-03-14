@@ -23,13 +23,13 @@
         <div>
           <h1 class="logo">WaterSurf</h1>
           <img src="./imgs/menu-button.svg" alt="Botão para abrir e fechar o menu." class="menu-button"
-            data-menu-button>
+            data-active="[data-active-ul]">
         </div>
-        <ul data-menu-ul>
-          <li><a href="#top" class="white"> SOBRE </a></li>
-          <li><a href="#teacher-section" class="white"> PROFESSORES </a></li>
-          <li><a href="#group-section" class="white"> MATRICULE-SE </a></li>
-          <li><a href="#assessment-section" class="white"> DEPOIMENTOS </a></li>
+        <ul data-active-ul>
+          <li><a href="#top" class="white" data-active="[data-active-ul]"> SOBRE </a></li>
+          <li><a href="#teacher-section" class="white" data-active="[data-active-ul]"> PROFESSORES </a></li>
+          <li><a href="#group-section" class="white" data-active="[data-active-ul]"> MATRICULE-SE </a></li>
+          <li><a href="#assessment-section" class="white" data-active="[data-active-ul]"> DEPOIMENTOS </a></li>
         </ul>
       </div>
     </nav>
@@ -116,28 +116,28 @@
             <p>Duas aulas na semana</p>
             <p>Aulas em grupo</p>
             <p>Todo o material para a aula</p>
-            <button class="button" data-button-sign-up> Inscreva-se</button>
+            <button class="button" data-active="[data-active-modal]"> Inscreva-se</button>
           </div>
           <div class="group-content">
             <h3 class="group">Particular Adulto</h3>
             <p>Duas aulas na semana</p>
             <p>Aulas solo</p>
             <p>Todo o material para a aula</p>
-            <button class="button" data-button-sign-up> Inscreva-se</button>
+            <button class="button" data-active="[data-active-modal]"> Inscreva-se</button>
           </div>
           <div class="group-content">
             <h3 class="group">Grupo Infantil</h3>
             <p>Duas aulas na semana</p>
             <p>Aulas em grupo</p>
             <p>Todo o material para a aula</p>
-            <button class="button" data-button-sign-up> Inscreva-se</button>
+            <button class="button" data-active="[data-active-modal]"> Inscreva-se</button>
           </div>
           <div class="group-content">
             <h3 class="group">Particular Infantil</h3>
             <p>Duas aulas na semana</p>
             <p>Aulas solo</p>
             <p>Todo o material para a aula</p>
-            <button class="button" data-button-sign-up> Inscreva-se</button>
+            <button class="button" data-active="[data-active-modal]"> Inscreva-se</button>
           </div>
         </div>
         <div class="call-button">
@@ -179,7 +179,7 @@
     </p>
   </footer>
 
-  <dialog id="modal-sign-up" data-modal-sign-up>
+  <dialog id="modal-sign-up" data-active-modal>
     <div class="container">
       <div class="modal">
         <div class="title-h2">
@@ -201,7 +201,7 @@
             <input type="submit" value="Enviar">
           </div>
         </form>
-        <button class="close-button" modal-close-button>X</button>
+        <button class="close-button" data-active="[data-active-modal]">X</button>
       </div>
     </div>
   </dialog>
