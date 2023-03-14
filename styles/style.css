@@ -93,7 +93,8 @@ section.waves {
 /*  */
 /* Paragraph */
 
-p {
+p,
+footer a {
   color: var(--7);
   font-size: 0.95rem;
   text-align: justify;
